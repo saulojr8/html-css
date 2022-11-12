@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*
+    em html é id = em CSS é # (só pode um elemento)
+    em html é class = em CSS é . (podem vários elementos)
+*/
+
+/*  SELETORES PERSONALIZADOS
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+*/
+body{
+    background-image: linear-gradient(to left,#02735E, #03A678);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: darkred;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:active{
+    color: yellow;
+}
+h1{
+    color: #731702;
+}
+
+h1#principal{ /*centraliza somente o h1 com identificado de principal*/
+    text-align: center;
+    background-color: #F27405;
+    border-radius: 5px;
+}
+h2{
+    color:#731702;
+}
+
+.basico{
+    color: #F27405;
+}
+/*
+.intermediario{
+
+}
+
+.avancado{
+
+}*/
+
+div{
+    background-color: dodgerblue;
+    text-align: center;
+    height: 200px; /*altura*/
+    width: 200px; /*largura*/
+    display: inline-block; /*colocam todas divs na mesma linha*/
+}
+div > p {
+    display: none;
+}
+div:hover{
+    background-color: yellow; /*fica amarelo quando passa o mouse*/
+}
+div:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+a::before{
+    content: '⇒';
+}
+a::after{
+    content: '⇐';
+    /*
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+*/
+}

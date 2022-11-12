@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    background-image: linear-gradient(to bottom, rgb(3, 168, 3), rgb(0, 51, 0));
+}
+
+#titulo-principal{
+    color: white;
+    text-align: center;
+}
+
+.p-principal{
+    color: white;
+    text-align: center;
+}
+
+nav{
+    padding-left: 20px;
+    padding-bottom:10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+body{
+    font-family: 'lato', 'sans-serif';
+    background-color: aquamarine;
+    margin: 0px;
+    
+}
+
+.card{
+    background-color: white;
+    width: 80vw;
+    
+    padding: 30px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: 'idroid';
+    color: green;
+}
+
+span{
+    color: green;
+    font-weight: bold;
+}
+
+p{
+    /*alinha o texto dos dois lados*/
+    text-indent: 30px; /*faz o espaço do parágrafo em todas tags <p>*/
+}
+
+h3{
+    font-family: 'idroid';
+    color: green;
+    text-align: justify;
+    background-image: linear-gradient(to right, rgb(154, 238, 154), white);
+}
+/*centraliza a div no meio*/
+.h9{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 75vw;
+}
+
+.fotodroid{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.video{
+   background-color: green; 
+   display: flex;
+   justify-content: center;
+}
+
+iframe{
+    padding: 15px;
+}
+
+.ultimo{
+    background-color:rgb(123, 255, 194);
+    border-radius: 10px;
+    padding: 1px 20px;    
+}
+h4{
+    background-color: rgb(30, 212, 106);
+    color: white;
+    padding: 5px 10px;
+}
+
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
